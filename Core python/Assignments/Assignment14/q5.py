@@ -1,0 +1,9 @@
+strs = ['flower', 'flow', 'flight']
+
+prefix = strs[0]
+
+for s in strs:
+    while not s.startswith(prefix):
+        prefix = prefix[:-1]
+
+print('Longest Common Prefix:', prefix)
